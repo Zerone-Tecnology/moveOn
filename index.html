@@ -5,334 +5,625 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/swiper/swiper-bundle.min.css"
 		/>
-		<link rel="stylesheet" href="src/css/style.css" />
+		<link rel="stylesheet" href="src/css/bootstrap-grid.min.css" />
+		<link rel="stylesheet" href="src/css/custom.css" />
 	</head>
 	<body>
-		<div class="container-outer">
-			<header>
-				<div class="header-wrapper justify-between">
-					<div class="logo">
-						<img src="src/assets/img/logo.svg" alt="moveon_logotype" />
+		<header>
+			<div class="container">
+				<div
+					class="
+						d-flex
+						flex-wrap flex-wrap
+						justify-content-between
+						header-wrapper
+					"
+				>
+					<div class="d-flex flex-wrap logo-wrapper">
+						<img
+							src="src/assets/img/logo.svg"
+							alt="moveon_logotype"
+							class="img-logo"
+						/>
 					</div>
-
-					<div class="menu-wide child-center-vertical">
-						<div class="menu-wrapper">
-							<ul>
-								<li><a href="#">Проект Move On</a></li>
-								<li><a href="#">Стать участником</a></li>
-								<li><a href="#">Стать партнером</a></li>
-								<li><a href="#">Контакты</a></li>
-							</ul>
-						</div>
+					<div class="d-flex flex-wrap menu-wrapper">
+						<ul class="menu-ul d-inline-flex flex-wrap align-self-center">
+							<li class="menu-li">
+								<a href="">Проект Move On</a>
+							</li>
+							<li class="menu-li">
+								<a href="">Стать участником</a>
+							</li>
+							<li class="menu-li">
+								<a href="">Стать партнером</a>
+							</li>
+							<li class="menu-li"><a href="">Контакты</a></li>
+						</ul>
 					</div>
-					<div class="social-icon-wrapper child-center-vertical">
-						<a href="#"><img src="src/assets/img/icons/youtube.svg" /></a>
-						<a href="#"><img src="src/assets/img/icons/instagram.svg" /></a>
-						<a href="#"><img src="src/assets/img/icons/ok.svg" /></a>
-						<a href="#"><img src="src/assets/img/icons/vk.svg" /></a>
-						<a href="#"><img src="src/assets/img/icons/facebook.svg" /></a>
-						<a href="#"><img src="src/assets/img/icons/telegram.svg" /></a>
+					<div
+						class="
+							d-flex
+							flex-wrap
+							d-inline-flex
+							icon-wrapper
+							align-self-center
+						"
+					>
+						<a href="#" class="icon-item">
+							<img src="src/assets/img/icons/youtube.svg" />
+						</a>
+						<a href="#" class="icon-item">
+							<img src="src/assets/img/icons/instagram.svg" />
+						</a>
+						<a href="#" class="icon-item">
+							<img src="src/assets/img/icons/ok.svg" />
+						</a>
+						<a href="#" class="icon-item">
+							<img src="src/assets/img/icons/vk.svg" />
+						</a>
+						<a href="#" class="icon-item">
+							<img src="src/assets/img/icons/facebook.svg" />
+						</a>
+						<a href="#" class="icon-item">
+							<img src="src/assets/img/icons/telegram.svg" />
+						</a>
 					</div>
-
-					<div class="menu-lite" style="display: none"></div>
 				</div>
-			</header>
-			<div class="block-wrapper swiper-container SwiperMain">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide main-slider-img">
-						<div class="flex-row">
-							<div class="flex-col">
-								<div class="flex-text-content">
-									<div class="slider-title">Move On</div>
-									<div class="slider-text">
+			</div>
+		</header>
+		<section class="slider swiper-container slider-first">
+			<div class="swiper-wrapper slider-wrapper">
+				<div class="swiper-slide slider-item slide-one">
+					<div class="shadow"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-6 d-flex flex-wrap justify-content-start">
+								<div
+									class="
+										d-flex
+										flex-wrap flex-column
+										slide-item-content
+										align-self-center
+									"
+								>
+									<div class="slide-item-title align-self-start">Move On</div>
+									<div class="slide-item-text align-self-start mb-auto">
 										это универсальная спортивная платформа, объединяющая всех
 										любителей активного образа жизни и упрощающая организацию,
 										участие и проведение спортивных мероприятий.
 									</div>
-									<div class="flex-wide-row">
-										<a class="btn-download mr-4" href="#">
+									<div class="slide-item-button-group mt-auto d-inline-flex">
+										<a href="" class="icon-download">
 											<img src="src/assets/img/appstore-white.svg" alt="" />
 										</a>
-										<a class="btn-download" href="#">
+										<a href="" class="icon-download">
 											<img src="src/assets/img/googleplay-white.svg" alt="" />
 										</a>
 									</div>
 								</div>
 							</div>
-							<div class="flex-col">
-								<img
-									src="src/assets/img/phone-front-picture.png"
-									class="slider-front-img"
-									alt=""
-								/>
+							<div class="col-6 slide-float-image-wrapper">
+								<img src="/src/assets/img/phone-front-picture.png" alt="" />
 							</div>
 						</div>
 					</div>
-					<div class="swiper-slide">Slide 2</div>
 				</div>
-				<div class="swiper-pagination"></div>
-			</div>
-			<div class="block-wrapper about-wrapper">
-				<div class="container-inner">
-					<div class="block-title-wrapper">
-						<div class="block-title">о приложении</div>
-					</div>
-					<div class="block-content-wrapper">
-						<div class="block-column block-left-column">
-							<div class="content-title">Регистрируйся</div>
-							<div class="content-text">
-								Возможность регистрироваться на индивидуальные и командные
-								мероприятия
+				<div class="swiper-slide slider-item slide-two">
+					<div class="shadow"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-6 d-flex flex-wrap justify-content-start">
+								<div
+									class="
+										d-flex
+										flex-wrap flex-column
+										slide-item-content
+										align-self-center
+									"
+								>
+									<div class="slide-item-title align-self-start">Move On</div>
+									<div class="slide-item-text align-self-start mb-auto">
+										это бег, экстремальная активность, горные походы, велоспорт,
+										шахматы, фитнес, скейтбординг и плавание.
+									</div>
+									<div class="slide-item-button-group mt-auto d-inline-flex">
+										<a href="" class="icon-download">
+											<img src="src/assets/img/appstore-white.svg" alt="" />
+										</a>
+										<a href="" class="icon-download">
+											<img src="src/assets/img/googleplay-white.svg" alt="" />
+										</a>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="block-column block-right-column">
-							<div class="content-about-img-wrapper">
-								<img
-									src="src/assets/img/number_one.svg"
-									alt="number_one"
-									name="number_one"
-								/>
-								<img
-									src="src/assets/img/about.png"
-									alt="about_picture"
-									name="about"
-								/>
+							<div class="col-6 slide-float-image-wrapper">
+								<img src="/src/assets/img/phone-front-picture.png" alt="" />
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div
-				class="block-wrapper banner-wrapper banner-silder-wrapper swiper-container SwiperSecond"
-			>
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="flex-row">
-							<div class="flex-col">
+			<div class="swiper-pagination first-swiper-pagination"></div>
+		</section>
+
+		<section class="slider section-about swiper-container slider-second">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-wrap justify-content-center">
+						<span class="block-title">о приложении</span>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-wrapper slider-wrapper">
+				<div class="swiper-slide slider-item">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 d-flex flex-wrap justify-content-start">
+								<div
+									class="
+										d-flex
+										flex-wrap flex-column
+										slide-item-content
+										align-self-start
+									"
+								>
+									<div class="slide-item-title align-self-start">
+										Регистрируйся
+									</div>
+									<div class="slide-item-text align-self-start mb-auto">
+										Возможность регистрироваться на индивидуальные и командные
+										мероприятия
+									</div>
+								</div>
+							</div>
+							<div
+								class="
+									col-8
+									slide-float-image-wrapper
+									d-flex
+									flex-wrap
+									justify-content-end
+								"
+							>
 								<img
-									src="src/assets/img/phone-front-picture-2.png"
-									class="slider-front-img"
+									src="/src/assets/img/about-number-1.svg"
+									class="img-upper"
 									alt=""
+									srcset=""
+								/>
+								<img
+									src="/src/assets/img/about-img-1.png"
+									class="img-under ml-auto"
+									alt=""
+									srcset=""
 								/>
 							</div>
-							<div class="flex-col">
-								<div class="flex-text-content">
-									<div class="slider-title">СТАНЬ УЧАСТНИКОМ</div>
-									<div class="slider-text">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide slider-item">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 d-flex flex-wrap justify-content-start">
+								<div
+									class="
+										d-flex
+										flex-wrap flex-column
+										slide-item-content
+										align-self-start
+									"
+								>
+									<div class="slide-item-title align-self-start">Участвуй</div>
+									<div class="slide-item-text align-self-start mb-auto">
+										Широкий выбор спортивных мероприятий не оставит равнодушным
+										даже опытных спортсменов!
+									</div>
+								</div>
+							</div>
+							<div
+								class="
+									col-8
+									slide-float-image-wrapper
+									d-flex
+									flex-wrap
+									justify-content-end
+								"
+							>
+								<img
+									src="/src/assets/img/about-number-2.svg"
+									class="img-upper"
+									alt=""
+									srcset=""
+								/>
+								<img
+									src="/src/assets/img/about-img-2.png"
+									class="img-under ml-auto"
+									alt=""
+									srcset=""
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide slider-item">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 d-flex flex-wrap justify-content-start">
+								<div
+									class="
+										d-flex
+										flex-wrap flex-column
+										slide-item-content
+										align-self-start
+									"
+								>
+									<div class="slide-item-title align-self-start">Побеждай</div>
+									<div class="slide-item-text align-self-start mb-auto">
+										Сделай первый шаг к новым высотам и достижениям!
+									</div>
+								</div>
+							</div>
+							<div
+								class="
+									col-8
+									slide-float-image-wrapper
+									d-flex
+									flex-wrap
+									justify-content-end
+								"
+							>
+								<img
+									src="/src/assets/img/about-number-3.svg"
+									class="img-upper"
+									alt=""
+									srcset=""
+								/>
+								<img
+									src="/src/assets/img/about-img-3.png"
+									class="img-under ml-auto"
+									alt=""
+									srcset=""
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide slider-item">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 d-flex flex-wrap justify-content-start">
+								<div
+									class="
+										d-flex
+										flex-wrap flex-column
+										slide-item-content
+										align-self-start
+									"
+								>
+									<div class="slide-item-title align-self-start">Узнавай</div>
+									<div class="slide-item-text align-self-start mb-auto">
+										Каждую неделю новые интересные соревнования
+									</div>
+								</div>
+							</div>
+							<div
+								class="
+									col-8
+									slide-float-image-wrapper
+									d-flex
+									flex-wrap
+									justify-content-end
+								"
+							>
+								<img
+									src="/src/assets/img/about-number-4.svg"
+									class="img-upper"
+									alt=""
+									srcset=""
+								/>
+								<img
+									src="/src/assets/img/about-img-4.png"
+									class="img-under ml-auto"
+									alt=""
+									srcset=""
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</section>
+
+		<section class="section-userSign">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 slide-float-image-wrapper">
+						<img src="/src/assets/img/phone-front-picture-2.png" alt="" />
+					</div>
+					<div class="col-6">
+						<div class="slider-third swiper-container">
+							<div class="swiper-wrapper slider-wrapper">
+								<div class="swiper-slide slider-item">
+									<div class="slider-letter-title">СТАНЬ УЧАСТНИКОМ</div>
+									<div class="slider-letter-text">
 										Получай напоминание о предстоящем старте
 									</div>
-									<div class="flex-wide-row">
-										<a class="btn-download mr-4" href="#">
-											<img src="src/assets/img/appstore-white.svg" alt="" />
-										</a>
-										<a class="btn-download" href="#">
-											<img src="src/assets/img/googleplay-white.svg" alt="" />
-										</a>
-									</div>
 								</div>
+								<div class="swiper-slide slider-item">asdasd</div>
 							</div>
+
+							<div class="swiper-pagination third-swiper-pagination"></div>
+						</div>
+						<div class="button-group d-inline-flex">
+							<a href="" class="icon-download">
+								<img src="src/assets/img/appstore-black.svg" alt="" />
+							</a>
+							<a href="" class="icon-download">
+								<img src="src/assets/img/googleplay-black.svg" alt="" />
+							</a>
 						</div>
 					</div>
-					<div class="swiper-slide">Slide 2</div>
 				</div>
-				<div class="swiper-pagination"></div>
 			</div>
-			<div class="block-wrapper sign-wrapper">
-				<div class="container-inner">
-					<div class="block-title-wrapper">
-						<div class="block-title">СТАТЬ ПАРТНЕРОМ</div>
+		</section>
+
+		<section class="section-partnerSign">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-wrap justify-content-center">
+						<span class="block-title">СТАТЬ ПАРТНЕРОМ</span>
 					</div>
-					<div class="block-content-wrapper flex-card-list justify-between">
-						<div class="flex-card-item bg-grey justify-around">
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-xs col-sm-6 col-md-4">
+						<div class="card align-text-center">
 							<div class="card-img-wrapper">
 								<img src="src/assets/img/icons/Discovery.svg" alt="icon" />
 							</div>
-							<div class="card-content-wrapper">
+							<div class="align-text-center">
 								<p>Создавайте события по разным видам спорта</p>
 							</div>
 						</div>
-						<div class="flex-card-item bg-green justify-around">
+					</div>
+					<div class="col-sm-xs col-sm-6 col-md-4">
+						<div class="card green align-text-center">
 							<div class="card-img-wrapper">
 								<img src="src/assets/img/icons/Calendar.svg" alt="icon" />
 							</div>
-							<div class="card-content-wrapper">
+							<div class="align-text-center">
 								<p>
 									Размещайте события в календаре приложения с готовой целевой
 									аудиторией
 								</p>
 							</div>
 						</div>
-						<div class="flex-card-item bg-grey justify-around">
+					</div>
+					<div class="col-sm-xs col-sm-6 col-md-4">
+						<div class="card align-text-center">
 							<div class="card-img-wrapper">
 								<img src="src/assets/img/icons/Document.svg" alt="icon" />
 							</div>
-							<div class="card-content-wrapper">
+							<div class="align-text-center">
 								<p>Просматривайте список участников</p>
 							</div>
 						</div>
-						<div class="flex-card-item bg-green justify-around">
+					</div>
+					<div class="col-sm-xs col-sm-6 col-md-4">
+						<div class="card green align-text-center">
 							<div class="card-img-wrapper">
 								<img src="src/assets/img/icons/Activity.svg" alt="icon" />
 							</div>
-							<div class="card-content-wrapper">
+							<div class="align-text-center">
 								<p>Загружайте результаты соревнований</p>
 							</div>
 						</div>
-						<div class="flex-card-item bg-grey justify-around">
+					</div>
+					<div class="col-sm-xs col-sm-6 col-md-4">
+						<div class="card align-text-center">
 							<div class="card-img-wrapper">
 								<img src="src/assets/img/icons/Wallet.svg" alt="icon" />
 							</div>
-							<div class="card-content-wrapper">
+							<div class="align-text-center">
 								<p>Принимайте оплату за регистрацию</p>
 							</div>
 						</div>
-						<div class="flex-card-item bg-green justify-around">
+					</div>
+					<div class="col-sm-xs col-sm-6 col-md-4">
+						<div class="card green align-text-center">
 							<div class="card-img-wrapper">
 								<img src="src/assets/img/icons/Notification.svg" alt="icon" />
 							</div>
-							<div class="card-content-wrapper">
+							<div class="align-text-center">
 								<p>Информируйте участников об изменениях в мероприятии</p>
 							</div>
 						</div>
-						<div class="flex-wide-row justify-around download-list-wrapper">
-							<div class="download-link">
-								<a href="">
-									<img src="src/assets/img/icons/download.svg" alt="" />
-									<span class="text-muted">Скачать медиакит</span>
-								</a>
-							</div>
-							<div class="download-link">
-								<a href="">
-									<img src="src/assets/img/icons/download.svg" alt="" />
-									<span class="text-muted">Скачать презентацию</span>
-								</a>
-							</div>
-						</div>
-						<div class="flex-wide-row justify-around sign-btn-wrapper">
-							<a href="#" class="btn btn-large bg-green">Стань партнером</a>
-						</div>
 					</div>
+				</div>
+				<div class="d-flex flex-wrap justify-content-around">
+					<div class="download-links">
+						<a href="">
+							<img src="src/assets/img/icons/download.svg" alt="" />
+							<span class="text-muted">Скачать медиакит</span>
+						</a>
+						<a href="">
+							<img src="src/assets/img/icons/download.svg" alt="" />
+							<span class="text-muted">Скачать медиакит</span>
+						</a>
+					</div>
+				</div>
+				<div class="d-flex flex-wrap justify-content-around">
+					<a href="" class="btn-partner">Стань партнером</a>
 				</div>
 			</div>
-			<div class="block-wrapper application-wrapper">
-				<div class="container-inner">
-					<div class="flex-row justify-between child-center-vertical">
-						<div class="flex-col qr-code-column">
-							<div class="qr-code-title">
-								<span>Версия Android</span>
-							</div>
-							<div class="qr-code-iamge-wrapper">
-								<img src="src/assets/img/Android 1.svg" alt="android-qr" />
-							</div>
-						</div>
-						<div class="flex-col image-wrapper">
-							<img src="src/assets/img/runnig_man.png" alt="running_man" />
-						</div>
-						<div class="flex-col qr-code-column">
-							<div class="qr-code-title">
-								<span>Версия iOS</span>
-							</div>
-							<div class="qr-code-iamge-wrapper">
-								<img src="src/assets/img/IOS 1.svg" alt="ios-qr" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="block-wrapper partner-wrapper bg-grey">
-				<div class="container-inner">
-					<div class="block-title-wrapper">
-						<div class="block-title">НАС ПОДДЕРЖАЛИ</div>
-					</div>
-				</div>
-				<div class="container-inner">
-					<div class="partner-list-wrapper justify-between">
-						<div class="partner-item child-center-vertical">
-							<a href="#">
-								<img src="src/assets/img/фст 1.png" alt="parter_1" />
-							</a>
-						</div>
-						<div class="partner-item child-center-vertical">
-							<a href="#">
-								<img src="src/assets/img/Athletex2 1.png" alt="parter_2" />
-							</a>
-						</div>
-						<div class="partner-item child-center-vertical">
-							<a href="#">
-								<img src="src/assets/img/RC logo 1.png" alt="parter_3" />
-							</a>
-						</div>
-						<div class="partner-item child-center-vertical">
-							<a href="#">
-								<img src="src/assets/img/GC 1.png" alt="parter_4" />
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<footer>
-				<div class="container-inner">
-					<div class="flex-row justify-between">
-						<div class="flex-col contact-column">
-							<div class="col-title">Наши контакты:</div>
-							<div class="col-content">
-								<ul>
-									<li>г. Алматы, пр. Достык, 132, офис 6</li>
-									<li>+7 776 272 4072</li>
-									<li>kz.moveon@gmail.com</li>
-								</ul>
-							</div>
-						</div>
-						<div class="flex-col middle-column">
-							<div class="col-title"><a href="/">Стать партнером</a></div>
-							<div class="social-icon-wrapper child-center-vertical">
-								<a href="#"><img src="src/assets/img/icons/youtube.svg" /></a>
-								<a href="#"><img src="src/assets/img/icons/instagram.svg" /></a>
-								<a href="#"><img src="src/assets/img/icons/ok.svg" /></a>
-								<a href="#"><img src="src/assets/img/icons/vk.svg" /></a>
-								<a href="#"><img src="src/assets/img/icons/facebook.svg" /></a>
-								<a href="#"><img src="src/assets/img/icons/telegram.svg" /></a>
-							</div>
-						</div>
-						<div class="flex-col application-column justify-center">
-							<div class="col-title">Скачать приложение:</div>
-							<div class="flex-wide-row justify-around">
-								<a class="btn-download img-whlte-appstore" href="#">
-									<img src="src/assets/img/appstore-white.svg" alt="" />
-								</a>
-							</div>
-							<div class="flex-wide-row justify-around">
-								<a class="btn-download img-whlte-googleplay" href="#">
-									<img src="src/assets/img/googleplay-white.svg" alt="" />
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
+		</section>
 
+		<section class="section-application">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 d-flex flex-wrap flex-column align-self-center">
+						<span class="qr-title">Версия Android</span>
+						<img src="src/assets/img/qr-android.svg" alt="" />
+					</div>
+					<div class="col-md-6 d-flex flex-wrap justify-content-around">
+						<img src="src/assets/img/runnig_man.png" alt="" />
+					</div>
+					<div class="col-md-3 d-flex flex-wrap flex-column align-self-center">
+						<span class="qr-title">Версия iOS</span>
+						<img src="src/assets/img/qr-ios.svg" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-partners">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-wrap justify-content-center">
+						<span class="block-title">НАС ПОДДЕРЖАЛИ</span>
+					</div>
+				</div>
+			</div>
+			<div class="container partner-link-wrapper">
+				<div class="d-flex flex-wrap flex-row justify-content-around">
+					<a href="#" class="partner-link align-self-center">
+						<img src="src/assets/img/фст 1.png" alt="parter_1" />
+					</a>
+					<a href="#" class="partner-link align-self-center">
+						<img src="src/assets/img/Athletex2 1.png" alt="parter_2" />
+					</a>
+					<a href="#" class="partner-link align-self-center">
+						<img src="src/assets/img/RC logo 1.png" alt="parter_3" />
+					</a>
+					<a href="#" class="partner-link align-self-center">
+						<img src="src/assets/img/GC 1.png" alt="parter_4" />
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row footer-wrapper">
+					<div
+						class="
+							col-sm-12 col-md-4
+							d-flex
+							flex-wrap flex-column
+							align-text-start
+						"
+					>
+						<div class="footer-col-title text-white">Наши контакты:</div>
+						<div class="footer-col-text text-white">
+							г. Алматы, пр. Достык, 132, офис 6
+						</div>
+						<div class="footer-col-text text-white">+7 776 272 4072</div>
+						<div class="footer-col-text text-white">kz.moveon@gmail.com</div>
+					</div>
+					<div
+						class="
+							col-sm-12 col-md-4
+							d-flex
+							flex-wrap flex-column
+							align-text-center
+						"
+					>
+						<div class="footer-col-title text-green">Стать партнером</div>
+						<div
+							class="
+								d-flex
+								flex-wrap
+								d-inline-flex
+								icon-wrapper
+								align-self-center
+								mx-auto
+							"
+						>
+							<a href="#" class="icon-item">
+								<img src="src/assets/img/icons/youtube.svg" />
+							</a>
+							<a href="#" class="icon-item">
+								<img src="src/assets/img/icons/instagram.svg" />
+							</a>
+							<a href="#" class="icon-item">
+								<img src="src/assets/img/icons/ok.svg" />
+							</a>
+							<a href="#" class="icon-item">
+								<img src="src/assets/img/icons/vk.svg" />
+							</a>
+							<a href="#" class="icon-item">
+								<img src="src/assets/img/icons/facebook.svg" />
+							</a>
+							<a href="#" class="icon-item">
+								<img src="src/assets/img/icons/telegram.svg" />
+							</a>
+						</div>
+					</div>
+					<div
+						class="
+							col-sm-12 col-md-4
+							d-flex
+							flex-wrap flex-column
+							align-text-end
+						"
+					>
+						<div class="footer-col-title text-white">Скачать приложение:</div>
+						<div class="button-group d-flex flex-wrap flex-column">
+							<a href="" class="footer-icon-download">
+								<img src="src/assets/img/appstore-white.svg" alt="" />
+							</a>
+							<a href="" class="footer-icon-download">
+								<img src="src/assets/img/googleplay-white.svg" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<!-- Swiper JS -->
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 		<!-- Initialize Swiper -->
 		<script>
-			var swiper = new Swiper('.SwiperMain', {
+			var slider_first = new Swiper('.slider-first', {
 				pagination: {
 					el: '.swiper-pagination',
 					clickable: true,
+				},
+				autoplay: {
+					delay: 5000,
+				},
+				loop: true,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true,
 				},
 			});
-			var swiperSecond = new Swiper('.SwiperSecond', {
+			var slider_second = new Swiper('.slider-second', {
 				pagination: {
 					el: '.swiper-pagination',
 					clickable: true,
 				},
+				loop: true,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true,
+				},
+				preloadImages: false,
+				lazy: true,
+			});
+			var slider_third = new Swiper('.slider-third', {
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				loop: true,
 			});
 		</script>
 	</body>
