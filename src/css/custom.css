@@ -187,10 +187,10 @@ header {
 	height: 712px;
 }
 .slider-first > .slider-wrapper > .slide-one {
-	background-image: url('../src/assets/img/main-swiper-picture-1.png');
+	background-image: url('../assets/img/main-swiper-picture-1.png');
 }
 .slider-first > .slider-wrapper > .slide-two {
-	background-image: url('../src/assets/img/main-swiper-picture-2.png');
+	background-image: url('../assets/img/main-swiper-picture-2.png');
 }
 
 .block-title {
