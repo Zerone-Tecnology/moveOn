@@ -11,7 +11,9 @@
 		padding: 0 !important;
 	}
 	.block-title {
+		margin-bottom: 16px !important;
 		margin-top: 58px !important;
+		font-size: 28px;
 	}
 	.swiper-pagination {
 		text-align-last: center;
@@ -24,7 +26,7 @@
 	}
 	.slider-third {
 		max-width: 100%;
-		height: 320px;
+		height: 270x;
 	}
 	.section-userSign {
 		height: auto !important;
@@ -40,30 +42,74 @@
 		text-align: center !important;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 47px;
+		font-size: 28px !important;
+		max-width: min-content;
+		line-height: 32px;
 	}
 	.section-userSign .slider-letter-text {
 		text-align: center !important;
 		margin-left: auto;
 		margin-right: auto;
+		font-family: Roboto;
+		line-height: 21px;
+		font-size: 18px !important;
+		max-width: 240px;
+		margin-bottom: 28px;
 	}
 	.section-userSign .slide-float-image-wrapper {
 		height: auto !important;
 		margin-top: 61px !important;
 	}
 	.section-userSign > .container > .d-flex > .slide-float-image-wrapper > img {
-		width: 80%;
+		width: 316px;
 		height: auto;
 		margin: 0 auto;
-		margin-top: 64px;
 	}
 	.section-userSign .button-group {
 		margin: 0 auto;
 		margin-top: 54px;
 	}
+	.download-links {
+		display: flex;
+		flex-wrap: wrap;
+		flex: 1;
+	}
+	.card img {
+		max-width: 46px;
+		margin-left: 26px;
+	}
+	.card p {
+		text-align: left;
+		padding-left: 16px;
+		max-width: 188px;
+	}
+	.section-partnerSign .card {
+		max-width: 315px;
+		font-size: 16px;
+		text-align: left !important;
+		margin-top: 22px;
+		padding-bottom: 0;
+	}
+	.download-links a {
+		margin: 0 auto !important;
+		margin-bottom: 32px !important;
+	}
+	.section-application {
+		margin-top: 57px;
+	}
+	.section-application img {
+		max-width: 311px;
+	}
+	.btn-partner {
+		font-size: 20px;
+		padding: 16px 48px;
+	}
 	.section-partners {
 		height: 100%;
 		text-align: center !important;
 		padding-bottom: 61px;
+		margin-top: 41px;
 	}
 	.partner-link {
 		margin: 0 auto !important;
@@ -71,6 +117,19 @@
 	.partner-link > img {
 		margin: 0 auto;
 	}
+	img[alt='parter_1'] {
+		height: 54px;
+	}
+	img[alt='parter_2'] {
+		height: 35px;
+	}
+	img[alt='parter_3'] {
+		height: 57px;
+	}
+	img[alt='parter_4'] {
+		height: 75px;
+	}
+
 	.partner-link:nth-of-type(1) {
 		order: 2;
 	}
@@ -118,13 +177,22 @@
 	.footer-last-column > .footer-col-title {
 		margin-bottom: 24px;
 	}
+	.footer-col-text {
+		font-size: 16px;
+	}
 	.footer-last-column > .button-group > img {
-		width: 139px;
+		max-width: 139px;
 	}
 	.footer-last-column > .button-group {
 		flex-direction: row !important;
 		margin: 0 auto;
 		margin-bottom: 46px;
+	}
+	.icon-download > img {
+		max-width: 139px;
+	}
+	.footer-icon-download > img {
+		max-width: 139px;
 	}
 	.footer-icon-download:nth-of-type(1) {
 		margin-right: 10.33px;
@@ -132,9 +200,7 @@
 
 	.card {
 		max-height: 145px;
-		width: 450px !important;
 		display: flex;
-		justify-content: center;
 		align-items: center;
 	}
 
@@ -144,5 +210,9 @@
 
 	.qr-wrapper {
 		display: none !important;
+	}
+
+	.row > * {
+		padding: 0 !important;
 	}
 }
