@@ -134,6 +134,8 @@
 		max-height: 145px;
 		width: 450px !important;
 		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.container {
