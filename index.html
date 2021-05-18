@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -14,7 +15,7 @@
 		<link rel="stylesheet" href="src/css/mobile.css" />
 	</head>
 	<body>
-		<header>
+		<header class="mobile open">
 			<div class="container">
 				<div
 					class="
@@ -30,6 +31,9 @@
 							alt="moveon_logotype"
 							class="img-logo"
 						/>
+					</div>
+					<div class="menu-burger__header">
+						<span></span>
 					</div>
 					<div class="d-flex flex-wrap menu-wrapper">
 						<ul class="menu-ul d-inline-flex flex-wrap align-self-center">
@@ -97,7 +101,7 @@
 										любителей активного образа жизни и упрощающая организацию,
 										участие и проведение спортивных мероприятий.
 									</div>
-									<div class="slide-item-button-group mt-auto d-inline-flex">
+									<div class="mt-auto d-inline-flex slide-item-button-group">
 										<a href="" class="icon-download">
 											<img src="src/assets/img/appstore-white.svg" alt="" />
 										</a>
@@ -109,6 +113,14 @@
 							</div>
 							<div class="col-md-6 slide-float-image-wrapper">
 								<img src="src/assets/img/phone-front-picture.png" alt="" />
+								<div class="mt-auto d-inline-flex slide-item-button-group">
+									<a href="" class="icon-download">
+										<img src="src/assets/img/appstore-white.svg" alt="" />
+									</a>
+									<a href="" class="icon-download">
+										<img src="src/assets/img/googleplay-white.svg" alt="" />
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -131,7 +143,7 @@
 										это бег, экстремальная активность, горные походы, велоспорт,
 										шахматы, фитнес, скейтбординг и плавание.
 									</div>
-									<div class="slide-item-button-group mt-auto d-inline-flex">
+									<div class="mt-auto d-inline-flex slide-item-button-group">
 										<a href="" class="icon-download">
 											<img src="src/assets/img/appstore-white.svg" alt="" />
 										</a>
@@ -143,6 +155,14 @@
 							</div>
 							<div class="col-md-6 slide-float-image-wrapper">
 								<img src="src/assets/img/phone-front-picture.png" alt="" />
+								<div class="mt-auto d-inline-flex slide-item-button-group">
+									<a href="" class="icon-download">
+										<img src="src/assets/img/appstore-white.svg" alt="" />
+									</a>
+									<a href="" class="icon-download">
+										<img src="src/assets/img/googleplay-white.svg" alt="" />
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -650,6 +670,16 @@
 					clickable: true,
 				},
 				loop: true,
+			});
+
+			$('.menu-burger__header').on('click', function () {
+				if ($('header').hasClass('open')) {
+					$('header').removeClass('open mobile');
+					if ($(this).hasClass('open-menu')) $(this).removeClass('open-menu');
+				} else {
+					$('header').addClass('mobile open');
+					if (!$(this).hasClass('open-menu')) $(this).addClass('open-menu');
+				}
 			});
 		</script>
 	</body>
