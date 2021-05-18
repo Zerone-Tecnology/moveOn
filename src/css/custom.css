@@ -549,3 +549,25 @@ footer {
 	bottom: 16px;
 	transition: 0.4s;
 }
+
+/* RE */
+/* .step-number-img */
+/* .step-main-img */
+.step-right-content {
+	margin-bottom: 165px;
+}
+.step-image-wrapper {
+	height: 442px;
+	width: 585px;
+	margin-left: auto;
+	position: relative;
+}
+.step-number-img {
+	height: 154px;
+	top: 134px;
+	left: -78px;
+	position: absolute;
+}
+.step-main-img {
+	max-width: 100%;
+}
