@@ -502,3 +502,50 @@ footer {
 .slide-float-image-wrapper > .slide-item-button-group {
 	display: none !important;
 }
+
+/*menu*/
+.menu-burger__header {
+	position: relative; /* задаем относительное позиционирование */
+	width: 39px; /* определяем размеры блока */
+	height: 35px;
+	display: none;
+	margin-top: 32px;
+	margin-right: 18px;
+	transition: all 0.5s;
+}
+.menu-burger__header span,
+.menu-burger__header:after,
+.menu-burger__header:before {
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	background: #ffffff;
+	margin: 0 auto;
+}
+.menu-burger__header span {
+	top: 16px;
+}
+.menu-burger__header:after,
+.menu-burger__header:before {
+	content: '';
+}
+.menu-burger__header:after {
+	bottom: 0;
+}
+.menu-burger__header:before {
+	top: 0;
+}
+.menu-burger__header.open-menu span {
+	opacity: 0;
+	transition: all 0.5s;
+}
+.menu-burger__header.open-menu:before {
+	transform: rotate(38deg);
+	top: 16px;
+	transition: 0.4s;
+}
+.menu-burger__header.open-menu:after {
+	transform: rotate(-38deg);
+	bottom: 16px;
+	transition: 0.4s;
+}
