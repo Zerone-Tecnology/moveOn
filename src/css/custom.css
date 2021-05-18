@@ -498,3 +498,7 @@ footer {
 .footer-icon-download {
 	margin-bottom: 23.6px;
 }
+
+.slide-float-image-wrapper > .slide-item-button-group {
+	display: none !important;
+}
