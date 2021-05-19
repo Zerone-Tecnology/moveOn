@@ -82,15 +82,15 @@
 	.step-number-img {
 		left: 28%;
 		transform: translateX(24%);
-		top: 40px;
+		top: -20px;
 		z-index: 1000;
 		width: 95px;
 		height: 95px;
 	}
 	.step-main-img {
 		max-width: none;
-		height: calc(100% - 60px);
-		margin-top: 120px;
+		height: calc(100%);
+		margin-top: 48px;
 	}
 }
 @media only screen and (max-width: 998px) {
@@ -120,8 +120,11 @@
 	}
 	.block-title {
 		margin-bottom: 16px !important;
-		margin-top: 58px !important;
+		margin-top: 38px !important;
 		font-size: 28px;
+	}
+	.mb-0 {
+		margin-bottom: 0 !important;
 	}
 	.swiper-pagination {
 		text-align-last: center;
@@ -193,7 +196,8 @@
 	.card p {
 		text-align: left;
 		padding-left: 16px;
-		max-width: 188px;
+		max-width: 174px;
+		line-height: 18px;
 	}
 	.section-partnerSign .card {
 		max-width: 315px;
@@ -256,7 +260,7 @@
 		order: 4;
 	}
 	.partner-link-wrapper {
-		margin-top: 81px !important;
+		margin-top: 26px !important;
 	}
 
 	footer {
@@ -277,6 +281,9 @@
 		flex-direction: column-reverse !important;
 		flex-wrap: wrap;
 	}
+	.footer-col-title {
+		margin-bottom: 48px;
+	}
 	.footer-middle-column > .footer-col-title {
 		width: 100%;
 		margin-bottom: 60px;
@@ -286,6 +293,8 @@
 		margin-bottom: 60px;
 	}
 	.footer-last-column > .footer-col-title {
+		font-size: 16px;
+		font-weight: 400;
 		margin-bottom: 24px;
 	}
 	.footer-col-text {
@@ -424,7 +433,7 @@
 		> .col-md-4
 		> .slide-item-content {
 		margin: 0 auto;
-		max-width: 270px;
+		max-width: 258px;
 	}
 	.slider-second
 		> .slider-wrapper
@@ -472,6 +481,29 @@
 		display: flex !important;
 		margin: 0 auto;
 		margin-top: 90px;
+	}
+	.footer-middle-column > .icon-wrapper {
+		display: flex !important;
+	}
+
+	.modal-window {
+		max-width: 310px;
+		min-width: 310px;
+	}
+	.onModal.close {
+		top: 13px;
+		right: 13px;
+	}
+	.onModal.close svg {
+		width: 17px;
+		height: 17px;
+	}
+	.modal-fields > .modal-row {
+		flex-wrap: wrap;
+		width: 260px;
+		margin: 0 auto;
+		justify-content: center;
+		margin-bottom: 24px;
 	}
 }
 

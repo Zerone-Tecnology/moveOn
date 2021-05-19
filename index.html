@@ -14,6 +14,97 @@
 		<link rel="stylesheet" href="src/css/mobile.css" />
 	</head>
 	<body>
+		<div class="modal">
+			<div class="shadow onModal"></div>
+			<div class="modal-wrapper">
+				<div class="modal-window">
+					<div class="modal-header">
+						<span class="modal-title">ОСТАВЬ ЗАЯВКУ НА ПАРТНЕРСТВО</span>
+						<span class="onModal close"
+							><svg
+								width="23"
+								height="24"
+								viewBox="0 0 23 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M14.2516 11.7965L22.3237 3.74316C22.6772 3.38967 22.8758 2.91023 22.8758 2.41032C22.8758 1.9104 22.6772 1.43097 22.3237 1.07747C21.9703 0.723981 21.4908 0.525391 20.9909 0.525391C20.491 0.525391 20.0116 0.723981 19.6581 1.07747L11.6047 9.14963L3.5513 1.07747C3.1978 0.723981 2.71837 0.525391 2.21845 0.525391C1.71854 0.525391 1.2391 0.723981 0.885608 1.07747C0.532116 1.43097 0.333526 1.9104 0.333526 2.41032C0.333526 2.91023 0.532116 3.38967 0.885608 3.74316L8.95776 11.7965L0.885608 19.8499C0.709657 20.0244 0.570001 20.2321 0.474696 20.4608C0.379391 20.6896 0.330322 20.935 0.330322 21.1828C0.330322 21.4306 0.379391 21.676 0.474696 21.9047C0.570001 22.1335 0.709657 22.3411 0.885608 22.5156C1.06012 22.6916 1.26775 22.8312 1.49651 22.9265C1.72527 23.0218 1.97063 23.0709 2.21845 23.0709C2.46627 23.0709 2.71164 23.0218 2.9404 22.9265C3.16916 22.8312 3.37678 22.6916 3.5513 22.5156L11.6047 14.4435L19.6581 22.5156C19.8326 22.6916 20.0402 22.8312 20.269 22.9265C20.4977 23.0218 20.7431 23.0709 20.9909 23.0709C21.2387 23.0709 21.4841 23.0218 21.7129 22.9265C21.9416 22.8312 22.1492 22.6916 22.3237 22.5156C22.4997 22.3411 22.6394 22.1335 22.7347 21.9047C22.83 21.676 22.879 21.4306 22.879 21.1828C22.879 20.935 22.83 20.6896 22.7347 20.4608C22.6394 20.2321 22.4997 20.0244 22.3237 19.8499L14.2516 11.7965Z"
+									fill="#C6C6C6"
+								/>
+							</svg>
+						</span>
+					</div>
+					<div class="modal-content modal-success hidden">
+						<div class="modal-column">
+							<div class="modal-row">
+								<img
+									src="src/assets/img/icons/logo-icon.svg"
+									alt=""
+									srcset=""
+								/>
+							</div>
+							<div class="modal-row">
+								<p class="success-p">
+									Ваша заявка принята, мы свяжемся с Вами в ближайшее время
+								</p>
+							</div>
+							<div class="modal-row">
+								<p class="success-p">Спасибо что Вы с нами</p>
+							</div>
+							<div class="modal-row">
+								<p class="success-p text-green">команда Move on</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-content modal-fields">
+						<div class="modal-row">
+							<input
+								type="text"
+								class="madal-input"
+								placeholder="Фамилия Имя"
+								name=""
+								id=""
+							/>
+							<input
+								type="text"
+								class="madal-input"
+								placeholder="Компания"
+								name=""
+								id=""
+							/>
+							<input
+								type="number"
+								class="madal-input"
+								placeholder="Телефон"
+								name=""
+								id=""
+							/>
+							<input
+								type="email"
+								class="madal-input"
+								placeholder="Email"
+								name=""
+								id=""
+							/>
+							<input
+								type="text"
+								class="madal-input"
+								placeholder="Должность"
+								name=""
+								id=""
+							/>
+							<input
+								type="submit"
+								class="madal-input modal-submit"
+								name=""
+								id=""
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<header class="">
 			<div class="container">
 				<div
@@ -64,12 +155,12 @@
 							<img src="src/assets/img/icons/youtube.svg" />
 						</a>
 						<a
-							href="https://www.instagram.com/moveon.kz/?hl=ru https://ok.ru/profile/595242537266"
+							href="https://www.instagram.com/moveon.kz/?hl=ru"
 							class="icon-item"
 						>
 							<img src="src/assets/img/icons/instagram.svg" />
 						</a>
-						<a href="https://ok.ru/profile/59524253726" class="icon-item">
+						<a href="https://ok.ru/profile/595242537266" class="icon-item">
 							<img src="src/assets/img/icons/ok.svg" />
 						</a>
 						<a href="https://vk.com/public203997913" class="icon-item">
@@ -186,7 +277,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 d-flex flex-wrap justify-content-center">
-						<span class="block-title">о приложении</span>
+						<span class="block-title mb-0">о приложении</span>
 					</div>
 				</div>
 			</div>
@@ -243,6 +334,43 @@
 										align-self-start
 									"
 								>
+									<div class="slide-item-title align-self-start">Узнавай</div>
+									<div class="slide-item-text align-self-start mb-auto">
+										Каждую неделю новые интересные соревнования
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 d-flex step-right-content">
+								<div class="step-image-wrapper">
+									<img
+										src="src/assets/img/about-number-2.svg"
+										class="step-number-img"
+										alt=""
+										srcset=""
+									/>
+									<img
+										src="src/assets/img/about-img-4.png"
+										class="step-main-img"
+										alt=""
+										srcset=""
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide slider-item">
+					<div class="container slider-item-container">
+						<div class="row">
+							<div class="col-md-4 d-flex flex-wrap justify-content-start">
+								<div
+									class="
+										d-flex
+										flex-wrap flex-column
+										slide-item-content
+										align-self-start
+									"
+								>
 									<div class="slide-item-title align-self-start">Участвуй</div>
 									<div class="slide-item-text align-self-start mb-auto">
 										Широкий выбор спортивных мероприятий не оставит равнодушным
@@ -253,7 +381,7 @@
 							<div class="col-md-8 d-flex step-right-content">
 								<div class="step-image-wrapper">
 									<img
-										src="src/assets/img/about-number-2.svg"
+										src="src/assets/img/about-number-3.svg"
 										class="step-number-img"
 										alt=""
 										srcset=""
@@ -290,50 +418,13 @@
 							<div class="col-md-8 d-flex step-right-content">
 								<div class="step-image-wrapper">
 									<img
-										src="src/assets/img/about-number-3.svg"
-										class="step-number-img"
-										alt=""
-										srcset=""
-									/>
-									<img
-										src="src/assets/img/about-img-3.png"
-										class="step-main-img"
-										alt=""
-										srcset=""
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide slider-item">
-					<div class="container slider-item-container">
-						<div class="row">
-							<div class="col-md-4 d-flex flex-wrap justify-content-start">
-								<div
-									class="
-										d-flex
-										flex-wrap flex-column
-										slide-item-content
-										align-self-start
-									"
-								>
-									<div class="slide-item-title align-self-start">Узнавай</div>
-									<div class="slide-item-text align-self-start mb-auto">
-										Каждую неделю новые интересные соревнования
-									</div>
-								</div>
-							</div>
-							<div class="col-md-8 d-flex step-right-content">
-								<div class="step-image-wrapper">
-									<img
 										src="src/assets/img/about-number-4.svg"
 										class="step-number-img"
 										alt=""
 										srcset=""
 									/>
 									<img
-										src="src/assets/img/about-img-4.png"
+										src="src/assets/img/about-img-3.png"
 										class="step-main-img"
 										alt=""
 										srcset=""
@@ -466,7 +557,9 @@
 					</div>
 				</div>
 				<div class="d-flex flex-wrap justify-content-around">
-					<a href="" class="btn-partner">Стань партнером</a>
+					<a href="javascript:void();" class="btn-partner onModal"
+						>Стань партнером</a
+					>
 				</div>
 			</div>
 		</section>
@@ -565,7 +658,9 @@
 							footer-middle-column
 						"
 					>
-						<div class="footer-col-title text-green">Стать партнером</div>
+						<div class="footer-col-title text-green onModal">
+							Стать партнером
+						</div>
 						<div
 							class="
 								d-flex
@@ -583,7 +678,7 @@
 								<img src="src/assets/img/icons/youtube.svg" />
 							</a>
 							<a
-								href="https://www.instagram.com/moveon.kz/?hl=ru https://ok.ru/profile/595242537266"
+								href="https://www.instagram.com/moveon.kz/?hl=ru"
 								class="icon-item"
 							>
 								<img src="src/assets/img/icons/instagram.svg" />
