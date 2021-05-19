@@ -42,3 +42,36 @@ $('.menu-burger__header').on('click', function () {
         if (!$(this).hasClass('open-menu')) $(this).addClass('open-menu');
     }
 });
+
+
+
+$('.onModal').on('click', function () {
+    if ($('.modal').hasClass('show')) {
+        $('.modal').removeClass('show');
+    } else {
+        $('.modal').addClass('show');
+    }
+
+
+    if ($('.modal-title').hasClass('hidden')) {
+        $('.modal-title').removeClass('hidden');
+    }
+    if ($('.modal-fields').hasClass('hidden')) {
+        $('.modal-fields').removeClass('hidden');
+    }
+    if (!$('.modal-success').hasClass('hidden')) {
+        $('.modal-success').addClass('hidden');
+    }
+});
+
+$('.modal-submit').on('click', function () {
+    if (!$('.modal-title').hasClass('hidden')) {
+        $('.modal-title').addClass('hidden');
+    }
+    if (!$('.modal-fields').hasClass('hidden')) {
+        $('.modal-fields').addClass('hidden');
+    }
+    if ($('.modal-success').hasClass('hidden')) {
+        $('.modal-success').removeClass('hidden');
+    }
+});
