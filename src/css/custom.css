@@ -592,7 +592,7 @@ footer {
 	z-index: 9999;
 }
 .modal-window {
-	min-width: 754px;
+	min-width: 680px;
 	min-height: 380px;
 	background-color: #fff;
 	border-radius: 7px;
@@ -655,6 +655,13 @@ footer {
 .modal-fields {
 	margin-top: 38px;
 }
+.modal-fields > .modal-row {
+	flex-wrap: wrap;
+	width: 530px;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
 .modal-content {
 	min-height: 200px;
 	font-family: Roboto;
@@ -681,6 +688,7 @@ footer {
 }
 
 .madal-input {
+	width: 219px;
 	min-height: 26px;
 	font-size: 16px;
 	text-align: center;
@@ -709,6 +717,7 @@ input[type='submit'] {
 	font-weight: 500;
 	font-size: 18px;
 	height: 56px;
+	width: 243px;
 }
 input[type='submit']:focus {
 	border: none;

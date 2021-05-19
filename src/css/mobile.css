@@ -485,6 +485,26 @@
 	.footer-middle-column > .icon-wrapper {
 		display: flex !important;
 	}
+
+	.modal-window {
+		max-width: 310px;
+		min-width: 310px;
+	}
+	.onModal.close {
+		top: 13px;
+		right: 13px;
+	}
+	.onModal.close svg {
+		width: 17px;
+		height: 17px;
+	}
+	.modal-fields > .modal-row {
+		flex-wrap: wrap;
+		width: 260px;
+		margin: 0 auto;
+		justify-content: center;
+		margin-bottom: 24px;
+	}
 }
 
 @media only screen and (max-width: 1200px) {
