@@ -7,10 +7,6 @@ var slider_first = new Swiper('.slider-first', {
         delay: 5000,
     },
     loop: true,
-    effect: 'fade',
-    fadeEffect: {
-        crossFade: true,
-    },
 });
 var slider_second = new Swiper('.slider-second', {
     pagination: {
@@ -18,12 +14,9 @@ var slider_second = new Swiper('.slider-second', {
         clickable: true,
     },
     loop: true,
-    effect: 'fade',
-    fadeEffect: {
-        crossFade: true,
+    autoplay: {
+        delay: 8000,
     },
-    preloadImages: false,
-    lazy: true,
 });
 var slider_third = new Swiper('.slider-third', {
     pagination: {
@@ -31,6 +24,9 @@ var slider_third = new Swiper('.slider-third', {
         clickable: true,
     },
     loop: true,
+    autoplay: {
+        delay: 4000,
+    },
 });
 
 $('.menu-burger__header').on('click', function () {
@@ -73,5 +69,11 @@ $('.modal-submit').on('click', function () {
     }
     if ($('.modal-success').hasClass('hidden')) {
         $('.modal-success').removeClass('hidden');
+    }
+});
+
+$(".menu-li").on('click', () => {
+    if ($(".open-menu").length) {
+        $(".open-menu").click();
     }
 });

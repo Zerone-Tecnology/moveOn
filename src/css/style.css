@@ -151,6 +151,9 @@ header {
 }
 /* BANNER END*/
 
+.section-userSign .slider-letter-text {
+	max-width: 560px;
+}
 .bg-grey {
 	background-color: var(--gray);
 }

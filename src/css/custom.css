@@ -293,6 +293,7 @@ header {
 	bottom: 0;
 	left: 80px;
 }
+
 .slider-third {
 	margin-top: 96px;
 	height: 262px;
@@ -319,7 +320,7 @@ header {
 	line-height: 35px;
 	letter-spacing: 0em;
 	text-align: left;
-	max-width: 410px;
+	max-width: 510px;
 }
 
 /* paginations */
@@ -366,6 +367,7 @@ header {
 	margin: 0 auto;
 	margin-top: 51px;
 	background: var(--gray);
+	transition: box-shadow 0.2s;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 18px;
 	font-family: Roboto;
@@ -376,6 +378,24 @@ header {
 	letter-spacing: 0em;
 	padding-bottom: 19px;
 }
+
+.section-partnerSign .card:hover {
+	animation: cardHover 0.5 cubic-bezier(0.54, 0.01, 0.74, 0.97);
+	box-shadow: 0px 6px 4px 1px rgb(37 37 43 / 25%);
+	transform: scale(1.01);
+}
+
+@keyframes cardHover {
+	0% {
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		transform: scale(1);
+	}
+	100% {
+		box-shadow: 0px 6px 10px 1px rgb(37 37 43 / 25%);
+		transform: scale(1.01);
+	}
+}
+
 .card-img-wrapper > img {
 	margin-top: 44px;
 }
