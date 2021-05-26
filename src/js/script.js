@@ -60,15 +60,21 @@ $('.onModal').on('click', function () {
     }
 });
 
+function mailSend() {
+
+}
 $('.modal-submit').on('click', function () {
-    if (!$('.modal-title').hasClass('hidden')) {
-        $('.modal-title').addClass('hidden');
-    }
-    if (!$('.modal-fields').hasClass('hidden')) {
-        $('.modal-fields').addClass('hidden');
-    }
-    if ($('.modal-success').hasClass('hidden')) {
-        $('.modal-success').removeClass('hidden');
+    const isSend = mailSend();
+    if (isSend) {
+        if (!$('.modal-title').hasClass('hidden')) {
+            $('.modal-title').addClass('hidden');
+        }
+        if (!$('.modal-fields').hasClass('hidden')) {
+            $('.modal-fields').addClass('hidden');
+        }
+        if ($('.modal-success').hasClass('hidden')) {
+            $('.modal-success').removeClass('hidden');
+        }
     }
 });
 
