@@ -28,7 +28,7 @@ function getMailMessage($messageProp) {
     $message = '<html><body>';
     foreach ($messageProp as $key => $value) {
         if ($value['text'] != '') continue;
-        $message .= '<p><></'.$value['name'].'strong>: '.$value['text'].'</p><br />';
+        $message .= '<p><strong>'.$value['name'].'</strong>: '.$value['text'].'</p><br />';
     }
     $message .= '</body></html>';
     return $message;
