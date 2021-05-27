@@ -105,7 +105,7 @@ $('.modal-submit').on('click', function () {
         dataset: [
             {
                 name: 'Фамилия Имя',
-                value: $('input[name="email"]').val()
+                value: $('input[name="fio"]').val()
             },
             {
                 name: 'Должность',
