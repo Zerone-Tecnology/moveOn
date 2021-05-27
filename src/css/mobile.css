@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @media only screen and (max-width: 768px) {
 	.slide-item-content > .slide-item-button-group {
 		display: none !important;
@@ -36,6 +43,8 @@
 		> .row
 		> .slide-float-image-wrapper
 		> .slide-item-button-group {
+		display: -webkit-inline-box !important;
+		display: -ms-inline-flexbox !important;
 		display: inline-flex !important;
 	}
 	.slider-second
@@ -67,13 +76,20 @@
 	}
 
 	.step-right-content {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		min-width: 100%;
 		margin: 0;
 	}
 	.step-image-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 		margin: 0;
 		width: 100%;
@@ -138,16 +154,6 @@
 		width: 100%;
 		z-index: 400;
 	}
-	.img-logo {
-		max-width: 160px;
-	}
-	.icon-wrapper,
-	.menu-wrapper {
-		display: none !important;
-	}
-	.menu-burger__header {
-		display: block;
-	}
 	.align-text-start,
 	.align-text-end {
 		text-align: center !important;
@@ -168,6 +174,7 @@
 		margin-bottom: 0 !important;
 	}
 	.swiper-pagination {
+		-moz-text-align-last: center;
 		text-align-last: center;
 	}
 	.img-under {
@@ -187,6 +194,9 @@
 		height: auto !important;
 	}
 	.section-userSign > .container > .d-flex {
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: reverse !important;
+		-ms-flex-direction: column-reverse !important;
 		flex-direction: column-reverse !important;
 		text-align: center !important;
 	}
@@ -199,6 +209,8 @@
 		margin-right: auto;
 		margin-bottom: 47px;
 		font-size: 28px !important;
+		max-width: -webkit-min-content;
+		max-width: -moz-min-content;
 		max-width: min-content;
 		line-height: 32px;
 	}
@@ -225,8 +237,13 @@
 		margin-top: 54px;
 	}
 	.download-links {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
 		flex: 1;
 	}
 	.card img {
@@ -286,17 +303,25 @@
 	}
 
 	.partner-link:nth-of-type(1) {
+		-webkit-box-ordinal-group: 3;
+		-ms-flex-order: 2;
 		order: 2;
 	}
 	.partner-link:nth-of-type(2) {
+		-webkit-box-ordinal-group: 2;
+		-ms-flex-order: 1;
 		order: 1;
 		width: 100%;
 		margin-bottom: 37px !important;
 	}
 	.partner-link:nth-of-type(3) {
+		-webkit-box-ordinal-group: 4;
+		-ms-flex-order: 3;
 		order: 3;
 	}
 	.partner-link:nth-of-type(4) {
+		-webkit-box-ordinal-group: 5;
+		-ms-flex-order: 4;
 		order: 4;
 	}
 	.partner-link-wrapper {
@@ -308,6 +333,8 @@
 		text-align: center !important;
 	}
 	.footer-wrapper > .d-flex {
+		-webkit-box-flex: 100%;
+		-ms-flex: 100%;
 		flex: 100%;
 	}
 	.footer-wrapper {
@@ -318,7 +345,11 @@
 		text-align: center;
 	}
 	.footer-middle-column {
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: reverse !important;
+		-ms-flex-direction: column-reverse !important;
 		flex-direction: column-reverse !important;
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 	.footer-col-title {
@@ -344,6 +375,9 @@
 		max-width: 139px;
 	}
 	.footer-last-column > .button-group {
+		-webkit-box-orient: horizontal !important;
+		-webkit-box-direction: normal !important;
+		-ms-flex-direction: row !important;
 		flex-direction: row !important;
 		margin: 0 auto;
 		margin-bottom: 46px;
@@ -360,7 +394,11 @@
 
 	.card {
 		max-height: 145px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 
@@ -403,12 +441,20 @@
 		> .slide-item-button-group {
 		position: absolute !important;
 		bottom: 26px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
 	}
 	.slider-item > .container > .row > .slide-float-image-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		margin-top: auto;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 		position: relative !important;
 		height: 455px;
@@ -461,6 +507,8 @@
 	}
 
 	.slide-item-content > .slide-item-button-group {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 	}
 	.slider-first > .swiper-pagination {
@@ -502,29 +550,9 @@
 		min-height: 76px;
 	}
 
-	header.mobile.open {
-		height: 100vh !important;
-		width: 100%;
-		z-index: 999999;
-		position: fixed;
-	}
-	header.mobile.open .menu-wrapper > ul > li {
-		width: 100%;
-		text-align: left !important;
-		margin: 0 !important;
-		margin-left: 16px !important;
-		margin-top: 37px !important;
-	}
-
-	header.mobile.open .menu-wrapper {
-		display: flex !important;
-	}
-	header.mobile.open .icon-wrapper {
-		display: flex !important;
-		margin: 0 auto;
-		margin-top: 90px;
-	}
 	.footer-middle-column > .icon-wrapper {
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
 		display: flex !important;
 	}
 
@@ -541,9 +569,12 @@
 		height: 17px;
 	}
 	.modal-fields > .modal-row {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		width: 260px;
 		margin: 0 auto;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 		margin-bottom: 24px;
 	}
@@ -554,5 +585,42 @@
 		max-width: 160px;
 		margin: 0 auto;
 		margin-top: 16px;
+	}
+	.icon-wrapper,
+	.menu-wrapper {
+		display: none !important;
+	}
+	.menu-burger__header {
+		display: block;
+	}
+	header.mobile.open {
+		height: 100vh !important;
+		width: 100%;
+		z-index: 999999;
+		position: fixed;
+	}
+	header.mobile.open .menu-wrapper > ul > li {
+		width: 100%;
+		text-align: left !important;
+		margin: 0 !important;
+		margin-left: 16px !important;
+		margin-top: 37px !important;
+	}
+
+	header.mobile.open .menu-wrapper {
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+		width: 100%;
+	}
+	header.mobile.open .icon-wrapper {
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+		margin: 0 auto;
+		margin-top: 90px;
+	}
+	.img-logo {
+		max-width: 160px;
 	}
 }
