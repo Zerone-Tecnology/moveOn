@@ -60,22 +60,73 @@ $('.onModal').on('click', function () {
     }
 });
 
-function mailSend() {
-
+function mailSend(req) {
+    $.ajax(
+        {
+            type: "POST",
+            url: '/src/ajax/mail.php',
+            data: req,
+            dataType: "json",
+            success: function (response) {
+                if (response.status != undefined && response.status == true) {
+                    modalIsSuccess();
+                } else {
+                    console.log('Не удалось отправить письмо!');
+                }
+            },
+            error: function (errMsg) {
+                console.log(errMsg);
+            }
+        }
+    );
+    return true;
 }
-$('.modal-submit').on('click', function () {
-    const isSend = mailSend();
-    if (isSend) {
-        if (!$('.modal-title').hasClass('hidden')) {
-            $('.modal-title').addClass('hidden');
-        }
-        if (!$('.modal-fields').hasClass('hidden')) {
-            $('.modal-fields').addClass('hidden');
-        }
-        if ($('.modal-success').hasClass('hidden')) {
-            $('.modal-success').removeClass('hidden');
-        }
+
+function modalIsSuccess() {
+    if (!$('.modal-title').hasClass('hidden')) {
+        $('.modal-title').addClass('hidden');
     }
+    if (!$('.modal-fields').hasClass('hidden')) {
+        $('.modal-fields').addClass('hidden');
+    }
+    if ($('.modal-success').hasClass('hidden')) {
+        $('.modal-success').removeClass('hidden');
+    }
+}
+
+$('.modal-submit').on('click', function () {
+    if ($('input[name="email"]').val() == '') {
+        return 0; // пользователь не указал почту
+    }
+
+    const req = {
+        action: 'mail',
+        to: $('input[name="email"]').val(),
+        dataset: [
+            {
+                name: 'Фамилия Имя',
+                value: $('input[name="email"]').val()
+            },
+            {
+                name: 'Должность',
+                value: $('input[name="position"]').val()
+            },
+            {
+                name: 'Компания',
+                value: $('input[name="company"]').val()
+            },
+            {
+                name: 'Телефон',
+                value: $('input[name="phone"]').val()
+            },
+            {
+                name: 'Почта',
+                value: $('input[name="email"]').val()
+            },
+        ]
+    }
+
+    mailSend(req);
 });
 
 $(".menu-li").on('click', () => {
