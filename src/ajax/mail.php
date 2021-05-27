@@ -60,7 +60,8 @@ function sendMail($props) {
 
 $response = ['status'=>false];
 
-if ($_POST['action'] == 'mail' && count($_POST['to']) != '') {
+if ($_POST['action'] == 'mail' && $_POST['to'] != '') {
+    debug($_POST);
     $response['status'] = sendMail($_POST);
     $response['message'] = $response['status'] ? 'Посьмо отправлено.' : 'Не удалось отправить письмо';  
 }
