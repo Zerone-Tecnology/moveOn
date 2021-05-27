@@ -1,34 +1,9 @@
 <?
-
-// Для дебага PHP в файл
-function array_to_string($var)
-{
-    ob_start();
-    print_r($var);
-    $result = ob_get_clean();
-    return $result;
-    return '';
-}
-
-// Для дебага PHP в файл
-function debug($var, $filename = "debug")
-{
-    $date = new DateTime("now", new DateTimeZone('Asia/Almaty'));
-    $date = $date->format('Y-m-d H:i:s');
-
-    $sFile = $_SERVER['DOCUMENT_ROOT'] . "/" . $filename . ".txt";
-    $rsHandler = fopen($sFile, "a+");
-    fwrite($rsHandler, "--------------------" . $date . "--------------------" . PHP_EOL);
-    fwrite($rsHandler, array_to_string($var) . PHP_EOL);
-    fwrite($rsHandler, "-----------------------------------------------------------" . PHP_EOL);
-    fclose($rsHandler);
-}
-
 function getMailMessage($messageProp) {
     $message = '<html><body>';
     foreach ($messageProp as $key => $value) {
         if ($value['text'] != '') continue;
-        $message .= '<p><strong>'.$value['name'].'</strong>: '.$value['text'].'</p><br />';
+        $message .= '<p><strong>'.$value['name'].'</strong>: '.$value['value'].'</p>';
     }
     $message .= '</body></html>';
     return $message;
@@ -47,12 +22,6 @@ function sendMail($props) {
     $headers .= "Reply-To: ".$from."\r\n"; 
 
     $message = getMailMessage($props['dataset']);
-    
-    debug(
-        [
-            $to, $subject, $message, $headers
-        ]
-    );
 
     $res = mail($to, $subject, $message, $headers);
     return $res;
@@ -61,7 +30,6 @@ function sendMail($props) {
 $response = ['status'=>false];
 
 if ($_POST['action'] == 'mail' && $_POST['to'] != '') {
-    debug($_POST);
     $response['status'] = sendMail($_POST);
     $response['message'] = $response['status'] ? 'Посьмо отправлено.' : 'Не удалось отправить письмо';  
 }
