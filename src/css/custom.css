@@ -9,22 +9,19 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 500;
-	src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap')
-		format('truetype');
+	src: url('src\assets\font\Roboto-Medium.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 700;
-	src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap')
-		format('truetype');
+	src: url('src\assets\font\Roboto-Bold.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
-		format('truetype');
+	src: url('src\assets\font\Roboto-Regular.ttf') format('truetype');
 }
 
 :root {
