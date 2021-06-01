@@ -93,7 +93,7 @@
 		align-items: center;
 		margin: 0;
 		width: 100%;
-		height: 369px;
+		height: 304px;
 		overflow-x: clip;
 	}
 	.step-number-img {
@@ -107,16 +107,14 @@
 	}
 	.step-main-img {
 		max-width: none;
-		margin-top: 48px;
-		position: absolute;
-		width: calc(478px + 30px);
 		left: 0;
 		right: 0;
 		bottom: 0;
 		margin: auto;
 		background-color: #fff;
-		width: 453px;
-		left: -15px;
+		height: 275px;
+		margin-top: 30px;
+		border-radius: 0;
 	}
 	.section-userSign .slider-letter-text {
 		max-width: 240px;
@@ -133,14 +131,12 @@
 		max-width: none;
 		margin-top: 48px;
 		position: absolute;
-		width: calc(478px + 30px);
 		left: 0;
 		right: 0;
 		bottom: 0;
 		margin: auto;
 		background-color: #fff;
 		width: 453px;
-		left: -15px;
 	}
 }
 @media screen and (max-width: 998px) {
