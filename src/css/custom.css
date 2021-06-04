@@ -98,13 +98,14 @@ header {
 	margin-left: 30px;
 }
 
-.header-wrapper > .menu-wrapper > .menu-ul > .menu-li > a {
+.header-wrapper > .menu-wrapper > .menu-ul > .menu-li > span {
 	font-family: Roboto;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 21px;
 	letter-spacing: 0em;
+	cursor: pointer;
 }
 
 .icon-wrapper > .icon-item:nth-child(n + 2) {

@@ -134,3 +134,21 @@ $(".menu-li").on('click', () => {
         $(".open-menu").click();
     }
 });
+
+function findPos(obj) {
+    var curtop = 0;
+    if (obj.offsetParent) {
+        do {
+            curtop += obj.offsetTop;
+        } while (obj = obj.offsetParent);
+        return [curtop];
+    }
+}
+
+function goto(eid) {
+    console.log('', eid)
+    window.scrollTo({
+        top: document.getElementById(eid).offsetTop - 100,
+        behavior: 'smooth'
+    });
+}
