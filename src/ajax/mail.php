@@ -10,14 +10,14 @@ function getMailMessage($messageProp) {
 }
 
 function sendMail($props) {
-    $subject = utf8_encode("Запрос на парнерство от пользователя на сайте moveon.kz");
+    $subject = "Запрос на парнерство от пользователя на сайте moveon.kz";
 
     $from = "info@moveon.kz";
     $replyTo = "info@moveon.kz";
 
     $to = $props['to'];
 
-    $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
+    $headers  = "Content-type: text/html; charset=UTF-8\r\n"; 
     $headers .= "From: <".$from.">\r\n"; 
     $headers .= "Reply-To: ".$from."\r\n"; 
     $headers .= "CC: ".$from.",d.rashidinov@zeronetech.kz\r\n";
