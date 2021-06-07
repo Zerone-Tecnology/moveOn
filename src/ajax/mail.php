@@ -10,7 +10,7 @@ function getMailMessage($messageProp) {
 }
 
 function sendMail($props) {
-    $subject = "Запрос на парнерство от пользователя на сайте moveon.kz";
+    $subject = utf8_encode("Запрос на парнерство от пользователя на сайте moveon.kz");
 
     $from = "info@moveon.kz";
     $replyTo = "info@moveon.kz";
